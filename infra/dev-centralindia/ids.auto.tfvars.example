@@ -1,0 +1,15 @@
+# Copy this file to ids.auto.tfvars (same folder) and fill in your own IDs.
+# ids.auto.tfvars is git-ignored; Terraform loads it automatically.
+# In GitHub Actions the same values come from repository variables (TF_VAR_*).
+#
+#   tenant / subscription : az account show --query "{tenant:tenantId, subscription:id}" -o table
+#   your object ID        : az ad signed-in-user show --query id -o tsv
+
+tenant_id       = "00000000-0000-0000-0000-000000000000"
+subscription_id = "00000000-0000-0000-0000-000000000000"
+
+# Who may push images to ACR (you now; the CI identity in Phase 6)
+acr_push_principal_ids = ["00000000-0000-0000-0000-000000000000"]
+
+# Who gets cluster admin through Azure RBAC (you now; the CI identity in Phase 6)
+aks_admin_principal_ids = ["00000000-0000-0000-0000-000000000000"]
