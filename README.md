@@ -22,8 +22,8 @@ A hands-on DevOps learning project that takes a simple Python Flask app all the 
 ## Progress
 
 - [x] Phase 1 – Local container environment (Rancher Desktop)
-- [ ] Phase 2 – Hello World app running locally
-- [ ] Phase 3 – Containerize the app
+- [x] Phase 2 – Hello World app running locally
+- [x] Phase 3 – Containerize the app
 - [ ] Phase 4 – ACR and AKS with Terraform
 - [ ] Phase 5 – Deploy to AKS
 - [ ] Phase 6 – CI/CD with GitHub Actions

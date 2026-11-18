@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # Configuration comes from environment variables, with safe defaults.
 APP_VERSION = os.getenv("APP_VERSION", "1.0.0")
-GREETING = os.getenv("GREETING", "Hello, World!")
+GREETING = os.getenv("GREETING", "Hello, World! v2")
 
 
 @app.get("/")
